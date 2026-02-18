@@ -14,7 +14,7 @@ export const TEXTS = {
     vsLocal: "% vs local",
     profitPercent: "Ganancia % sobre inversión",
     best: "💎 Mejor opción",
-    footer: "Creado por Vladimir Marcelo · Herramienta no oficial",
+    footer: "Creado por Vladimir Marcelo · Herramienta no oficial - PD: soy pobre asi que solo lo pude subir aqui, ya que no es pesado ni nada",
   },
   en: {
     title: "📊 Arknights Endfield Price Comparator",
@@ -31,6 +31,6 @@ export const TEXTS = {
     vsLocal: "% vs local",
     profitPercent: "Profit % over investment",
     best: "💎 Best option",
-    footer: "Created by Vladimir Marcelo · Unofficial tool",
+    footer: "Created by Vladimir Marcelo · Unofficial tool - PS: I'm poor, so I could only upload it here, since it's not heavy or anything.",
   },
 };

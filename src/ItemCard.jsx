@@ -22,7 +22,6 @@ export default function ItemCard({
   const ingresoTotal = pr * qty;
   const gananciaTotal = ingresoTotal - costoTotal;
 
-  // ✅ % de ganancia sobre la inversión
   const porcentajeGanancia =
     costoTotal > 0 ? (gananciaTotal / costoTotal) * 100 : 0;
 
@@ -32,6 +31,8 @@ export default function ItemCard({
 
   const fmt = (n) =>
     n.toLocaleString("es-MX", { maximumFractionDigits: 2 });
+
+  const imgBase = import.meta.env.BASE_URL + "imagenes/";
 
   return (
     <div className={`card ${isBest ? "best" : ""}`}>
@@ -88,7 +89,7 @@ export default function ItemCard({
         ) : (
           <>
             <img
-              src={`/imagenes/${imagen}`}
+              src={`${imgBase}${imagen}`}
               alt="item"
               className="preview"
             />
@@ -104,12 +105,12 @@ export default function ItemCard({
           {availableImages.map((img) => (
             <img
               key={img}
-              src={`/imagenes/${img}`}
+              src={`${imgBase}${img}`}
               alt={img}
               title={img}
               className="img-option"
               onClick={(e) => {
-                e.stopPropagation(); // 👈 evita cerrar/abrir raro
+                e.stopPropagation();
                 onChange({ ...data, imagen: img });
                 setShowImages(false);
               }}
@@ -135,7 +136,7 @@ export default function ItemCard({
         <strong>${fmt(gananciaTotal)}</strong>
       </div>
 
-      {/* ✅ PORCENTAJE DE GANANCIA */}
+      {/* PORCENTAJE DE GANANCIA */}
       <div className="result">
         <span>{t("profitPercent")}</span>
         <strong

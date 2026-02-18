@@ -16,6 +16,7 @@ const IMAGENES = [
   "9.png",
   "10.png",
   "11.png",
+  "12.png",
 ];
 
 function nuevaCarta() {
@@ -103,8 +104,10 @@ function App() {
       </div>
 
       <footer className="footer">
-        {t("footer")}
-      </footer>
+  {t("footer")}
+  <div id="clustrmaps-container"></div>
+</footer>
+
     </div>
   );
 }

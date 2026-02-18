@@ -94,6 +94,7 @@ input {
   color: #4caf50;
   font-size: 1.2rem;
 }
+
 .best {
   border: 2px solid #4caf50;
   box-shadow: 0 0 12px rgba(76, 175, 80, 0.4);
@@ -110,6 +111,7 @@ input {
   font-size: 0.75rem;
   font-weight: bold;
 }
+
 .img-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, 56px);
@@ -124,7 +126,6 @@ input {
   object-fit: cover;
 }
 
-
 .img-option:hover {
   opacity: 1;
 }
@@ -138,12 +139,14 @@ input {
   font-size: 0.75rem;
   color: #4caf50;
 }
+
 .footer {
   margin-top: 40px;
   text-align: center;
   font-size: 0.75rem;
   opacity: 0.5;
 }
+
 .img-picker {
   margin-top: 6px;
   padding: 10px;
